@@ -4,101 +4,113 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-      
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous"
     />
     <style>
-      body {
-     background-color: red;
-      }
-      .rounded-image img {
-        height: 200px;
-        width: 200px;
-        object-fit: cover;
-        border-radius: 100%;
-      }
+        body {
+            background-color: red;
+        }
 
-      .card-body {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding-bottom: 0%;
-        color: red;
-        font-weight: 500;
-      }
+        .rounded-image img {
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+            border-radius: 100%;
+        }
 
-      .card-img-top {
-        display: flex;
-        align-items: center;
-      }
-      .rating {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 2rem;
-      }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-bottom: 0%;
+            color: red;
+            font-weight: 500;
+        }
 
-      .rating input {
-        display: none;
-      }
+        .card-img-top {
+            display: flex;
+            align-items: center;
+        }
 
-      .rating label {
-        cursor: pointer;
-        color: #ccc;
-      }
+        .rating {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
 
-      .rating label:hover,
-      .rating label:hover ~ label,
-      .rating input:checked ~ label {
-        color: #ffd700;
-      }
+        .rating input {
+            display: none;
+        }
 
-      .titels{
-        margin-top: 100px;
-        margin-bottom: 50px;
-        color: #ffffff;
-      }
-      .main-titel{
-        width: 256px;
-        height: 66px;
-        font-family: Inder;
-        font-size: 90px;
-        font-style: normal;
-        font-weight: 700;
-        color: rgb(255, 255, 255);
-        text-align: center;
-      }
-      .col-4,.col-3 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transition: transform 0.3s ease;
-      }
+        .rating label {
+            cursor: pointer;
+            color: #ccc;
+        }
 
-      .col-4:hover,
-      .col-3:hover {
-       transform: scale(1.1); 
-      }
+        .rating label:hover,
+        .rating label:hover ~ label,
+        .rating input:checked ~ label {
+            color: #ffd700;
+        }
 
-      .blurred-container{
-        color: rgb(255, 198, 198);
-      }
-      .rounded-box {
-      border: 0.5px solid #fffdfd00; 
-      border-radius: 10px; 
-      padding: 20px; 
-    }
-  
+        .titels {
+            margin-top: 100px;
+            margin-bottom: 50px;
+            color: #ffffff;
+        }
+
+        .main-titel {
+            width: 256px;
+            height: 66px;
+            font-family: Inder;
+            font-size: 90px;
+            font-style: normal;
+            font-weight: 700;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        .col-4,
+        .col-3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+
+        .col-4:hover,
+        .col-3:hover {
+            transform: scale(1.1);
+        }
+
+        .blurred-container {
+            color: rgb(255, 198, 198);
+        }
+
+        .rounded-box {
+            border: 0.5px solid #fffdfd00;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        
+        @media (max-width: 750px) {
+            .row-cols-md-4 > div {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
     </style>
 
     <title >menu</title>
   </head>
   <body>
 
-    <div class="container ">
+    <div class="container  ">
       <div class="text" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <h2  class="main-titel">Menü</h2>
 
@@ -277,7 +289,7 @@
 
 
     <div class="row row-cols-1 row-cols-md-4 g-4 align-items">
-      <!-- fifth item -->
+      <!-- first item -->
      <div class="col-3">
        <div class="card h-100 rounded-image img d-inline-flex p-2">
          <img
@@ -318,7 +330,7 @@
      </div>
    </div>
 
-   <!-- sixth item -->
+   <!-- second item -->
 
  
      <div class="col-3">
@@ -360,7 +372,7 @@
        </di>
      </div>
    </div>
-<!-- seventh item -->
+<!-- third item -->
 
 <div class="col-3">
  <div class="card h-100 rounded-image img d-inline-flex p-2">
@@ -403,7 +415,7 @@
  </di>
 </div>
 </div>
-<!-- eighth item -->
+<!-- forth item -->
 <div class="col-3">
  <div class="card h-100 rounded-image img d-inline-flex p-2">
    <img
@@ -448,7 +460,7 @@
 <br>
 <h1 class="titels" style="text-align: center">Dessert/Nachtisch</h1>
 <div class="row row-cols-1 row-cols-md-4 g-4 align-items">
-  <!-- nineth item -->
+  <!-- first item -->
   <div class="col-3 mx-auto">
     <div class="card h-100 rounded-image img d-inline-flex p-2">
       <img
@@ -488,7 +500,7 @@
     </div>
   </div>
 
-  <!-- tenth item -->
+  <!-- second item -->
   <div class="col-3 mx-auto">
     <div class="card h-100 rounded-image img d-inline-flex p-2">
       <img
@@ -527,7 +539,7 @@
       </li>
     </div>
   </div>
-<!-- eleventh item -->
+<!-- third item -->
   <div class="col-3 mx-auto">
     <div class="card h-100 rounded-image img d-inline-flex p-2">
       <img
@@ -571,7 +583,7 @@
   <h1 class="titels" style="text-align: center">Getränke</h1>
 
 <div class="row row-cols-1 row-cols-md-4 g-4 align-items">
-  <!-- twelveth -->
+  <!-- first item -->
   <div class="col-3 mx-auto">
     <div class="card h-100 rounded-image img d-inline-flex p-2">
       <img
@@ -611,7 +623,7 @@
     </div>
   </div>
 
-  <!-- thirteenth item -->
+  <!-- second item -->
   <div class="col-3 mx-auto">
     <div class="card h-100 rounded-image img d-inline-flex p-2">
       <img
@@ -651,7 +663,7 @@
       </li>
     </div>
   </div>
-<!-- fourteenth item -->
+<!-- third item -->
   <div class="col-3 mx-auto">
     <div class="card h-100 rounded-image img d-inline-flex p-2">
       <img
